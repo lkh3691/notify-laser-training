@@ -32,5 +32,5 @@ if __name__ == "__main__":
         print("참여 인원 정보를 찾지 못했습니다.")
     else:
         # 8명이 아니면 알림 보내기
-        if current != 7:
+        if current != 8:
             send_telegram_message(f"[레이저커팅기 교육] 현재 참여 인원이 8명이 아닙니다: {current}명")
