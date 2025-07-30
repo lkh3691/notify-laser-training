@@ -24,7 +24,9 @@ def read_last_value():
     if not os.path.exists(LAST_VALUE_FILE):
         return None
     with open(LAST_VALUE_FILE, "r") as f:
-        return int(f.read().strip())
+        content = f.read().strip()
+        return int(content) if content.isdigit() else None
+
 
 def write_last_value(value):
     with open(LAST_VALUE_FILE, "w") as f:
