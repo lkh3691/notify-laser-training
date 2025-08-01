@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 import os
 import requests
 
-URL = "https://makeinyongsan.kr/program/view/6881c5901c3899787169dfe0"
+URL = "https://makeinyongsan.kr/program/view/6881c4751c3899787169dc9a"
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
@@ -32,5 +32,5 @@ if __name__ == "__main__":
         print("참여 인원 정보를 찾지 못했습니다.")
     else:
         # 8명이 아니면 알림 보내기
-        if current != 10:
+        if current != 8:
             send_telegram_message(f"[레이저커팅기 교육] 현재 참여 인원이 8명이 아닙니다: {current}명")
