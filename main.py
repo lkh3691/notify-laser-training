@@ -2,7 +2,7 @@ from playwright.sync_api import sync_playwright
 import os
 import requests
 
-URL = "https://makeinyongsan.kr/program/view/6881c4751c3899787169dc9a"
+URL = "https://makeinyongsan.kr/program/view/69c24195847d148cf20ca6c1"
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
